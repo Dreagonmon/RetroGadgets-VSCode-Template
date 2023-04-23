@@ -7,6 +7,7 @@
 ---@field IsActive boolean Returns `true` if the Webcam is currently being used. READ ONLY.
 ---@field IsAvailable boolean Returns `true` if the Webcam is available for being used. READ ONLY.
 ---@field GetRenderBuffer fun(self:Webcam):RenderBuffer Gets the camera `RenderBuffer`. The render buffer obtained can then be fed to the `DrawRenderBuffer` method of the `VideoChip` module.
+---@field Type "Webcam"
 
 ---Triggered when the Webcam's active state changes.
 ---@class WebcamIsActiveEvent

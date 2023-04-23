@@ -4,6 +4,7 @@
 ---@class AudioChip:Module
 ---@field ChannelsCount number Number of available channels for this AudioChip. Each channel can independently play an audio sample. READ ONLY.
 ---@field Volume number The global AudioChip volume.
+---@field Type "AudioChip"
 ---@field GetSpectrumData fun(self:AudioChip, channel:number, samplesCount:number):number[] Returns the audio spectrum values of a `channel` as a table of number values, each one expressing the value of a different frequency. `samplesCount` must be a power of 2 (ie 128/256/512 etc) Min = 64 Max = 8192.
 ---@field GetDspTime fun(self:AudioChip):number Returns the current internal AudioChip's DSP time. It is meant to be used in combination with the `PlayScheduled` method. The returned number is expressed in seconds.
 ---@field Play fun(self:AudioChip, audioSample:AudioSample, channel:number) Immediately plays an `AudioSample` on a specific `channel`.

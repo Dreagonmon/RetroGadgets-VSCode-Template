@@ -17,3 +17,4 @@
 ---@field Cpu RealityChipCpu
 ---@field Ram RealityChipRam
 ---@field Network RealityChipNetwork
+---@field Type "RealityChip"

@@ -5,6 +5,7 @@
 ---@field ButtonState boolean Reflect the pressed/released state of the connector's button. READ ONLY.
 ---@field IsConnected boolean Returns `true` if the connector is connected to another one, `false` otherwise. READ ONLY.
 ---@field AttachedConnector MagneticConnector Returns the other MagneticConnector module that this one is attached to, if any. READ ONLY.
+---@field Type "MagneticConnector"
 
 ---Triggered once another MagneticConnector attaches or detaches from this one.
 ---@class MagneticConnectorEvent

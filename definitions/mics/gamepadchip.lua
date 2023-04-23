@@ -8,6 +8,7 @@
 ---@class GamepadChip:Module
 ---@field GamepadIndex number Setting this property allows you to select which one of the gamepads currently connected to your computer the chip will use.
 ---@field IsActive boolean Returns whether or not the selected gamepad is currently active (plugged in and available) on your computer. READ ONLY.
+---@field Type "GamepadChip"
 ---@field GetButton fun(self:GamepadChip, name:GamepadInputNameButton):InputSource Returns an InputSource for a given button.
 ---@field GetAxis fun(self:GamepadChip, name:GamepadInputNameAxis):InputSource Returns an InputSource for a given button.
 ---@field GetButtonAxis fun(self:GamepadChip, negativeName:GamepadInputNameButton, positiveName:GamepadInputNameButton):InputSource Returns an InputSource axis controlled by two given buttons, one for negative and one for positive values.

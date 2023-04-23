@@ -6,6 +6,7 @@
 ---@field Y number The position of the stick along the vertical axis, ranging from -100 to 100. READ ONLY.
 ---@field InputSourceX InputSource The module associated with the stick's horizontal axis.
 ---@field InputSourceY InputSource The module associated with the stick's vertical axis.
+---@field Type "AnalogStick"
 
 ---Triggered when the stick is moved.
 ---@class StickValueChangeEvent

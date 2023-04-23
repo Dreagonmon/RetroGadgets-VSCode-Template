@@ -16,3 +16,4 @@
 ---@class ROM:Module
 ---@field User ROMUser
 ---@field System ROMSystem
+---@field Type "ROM"

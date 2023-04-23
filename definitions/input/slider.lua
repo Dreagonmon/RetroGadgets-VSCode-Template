@@ -4,6 +4,7 @@
 ---@class Slider:Module
 ---@field Value number The value returned by the position of the slider, ranging from 0 to 100.
 ---@field IsMoving boolean Returns `true` if the user is moving the slider. READ ONLY.
+---@field Type "Slider"
 
 ---Triggered when the slider is moved.
 ---@class SliderValueChangeEvent

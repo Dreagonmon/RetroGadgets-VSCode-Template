@@ -1,14 +1,38 @@
 # RetroGadgets VSCode Template
 
-## Usage
+## Usage1
 * Install VSCode Extension: [sumneko.lua](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
 * [Create a new repository](https://github.com/Dreagonmon/RetroGadgets-VSCode-Template/generate) using this template.
 * Define your hardware in `definitions/gdt.lua`
 * Enjoy Coding~
 
+## Usage2
+* Install VSCode extension: [sumneko.lua](https://marketplace.visualstudio.com/items?itemName=sumneko.lua)
+* Clone this template to `/path/to/RetroGadgets-VSCode-Template`.
+* Change extension setting: `"Lua.workspace.library": [ "/path/to/RetroGadgets-VSCode-Template" ]`
+* Define your hardware in your project `definitions/gdt.lua`
+* Enjoy Coding~
+
+## Define the `gdt` Object
+```lua
+---@meta _
+
+---@class Gadget
+----- hardware definition start -----
+---@field Motherboards Motherboard[]
+---@field PowerButton0 PowerButton
+---@field ROM ROM
+-----           ......          -----
+-----  hardware definition end  -----
+
+---@type Gadget
+gdt = {}
+
+```
+
 ## Read More
 * [Annotations for Lua Extension](https://github.com/LuaLS/lua-language-server/wiki/Annotations)
-* [RetroGadgets Documentation](https://docs.retrogadgets.game/index.html)
+* [RetroGadgets Documentation](https://docs.retrogadgets.game)
 
 ## License
 ```

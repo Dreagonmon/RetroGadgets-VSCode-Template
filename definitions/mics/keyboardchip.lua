@@ -4,6 +4,7 @@
 
 ---The KeyboardChip allows you to control your gadgets using your computer's real keyboard.
 ---@class KeyboardChip:Module
+---@field Type "KeyboardChip"
 ---@field GetButton fun(self:KeyboardChip, name:KeyboardInputName):InputSource Returns an InputSource for a given key.
 ---@field GetButtonAxis fun(self:KeyboardChip, negativeName:KeyboardInputName, positiveName:KeyboardInputName):InputSource Returns an InputSource axis controlled by two given keys, one for negative and one for positive values.
 

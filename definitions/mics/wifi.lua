@@ -2,6 +2,7 @@
 
 ---@class Wifi:Module
 ---@field AccessDenied boolean Will return `true` if network access is denied. READ ONLY.
+---@field Type "Wifi"
 ---@field WebGet fun(self:Wifi, url:string):number Send a web HTTP GET request, return a numeric handle to identify the request.
 ---@field WebPutData fun(self:Wifi, url:string, data:string):number Send a web HTTP PUT request, return a numeric handle to identify the request.
 ---@field WebPostData fun(self:Wifi, url:string, data:string):number Send a web HTTP POST request, return a numeric handle to identify the request.

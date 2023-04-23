@@ -8,6 +8,7 @@
 ---@field InputSource InputSource An `InputSource` to be used to trigger the button state.
 ---@field LedState boolean The lit/unlit state of the Led of this button.
 ---@field LedColor color The color of the Led of this button.
+---@field Type "LedButton"
 
 ---Triggered when the LedButton is pressed or released.
 ---@class LedButtonEvent

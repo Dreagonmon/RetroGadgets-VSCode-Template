@@ -7,6 +7,7 @@
 ---@field Mode VideoChipMode The buffering mode for this VideoChip. Defaults to `VideoChipMode.DoubleBuffer`.
 ---@field Width number Width in pixels of the rendering buffer. The area takes into account all the displays connected to this VideoChip. READ ONLY.
 ---@field Height number Height in pixels of the rendering buffer. The area takes into account all the displays connected to this VideoChip. READ ONLY.
+---@field Type "VideoChip"
 ---@field Clear fun(self:VideoChip, color:color) Clears all the render area with the specified `color`.
 ---@field SetPixel fun(self:VideoChip, position:vec2, color:color) Sets the pixel at the specified `position` to the specified `color`.
 ---@field DrawPointGrid fun(self:VideoChip, gridOffset:vec2, dotsDistance:number, color:color) Draws a dotted grid on the entire display area, with an offset. The `dotsDistance` parameter express the distance in pixels, on both axis, between dots.
