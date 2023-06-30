@@ -1,3 +1,0 @@
----@meta _
-
----@class RenderBuffer

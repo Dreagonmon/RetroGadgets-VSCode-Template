@@ -22,3 +22,8 @@
 ---@field GetChannelVolume fun(self:AudioChip, channel:number):number Gets the current volume for a `channel`, 0-100 range.
 ---@field SetChannelPitch fun(self:AudioChip, pitch:number, channel:number) Sets the `pitch` for a `channel`. Acts as a multiplier. A value of 1 means the default pitch for a sample, a value of 2 plays the sample one octave higher.
 ---@field GetChannelPitch fun(self:AudioChip, channel:number):number Gets the current pitch of a `channel`.
+
+---Sent when a channel has finished playing.
+---@class AudioChipChannelEvent
+---@field Channel number
+---@field Type "AudioChipChannelEvent" is "AudioChipChannelEvent"

@@ -7,7 +7,15 @@
 ---@field Mode VideoChipMode The buffering mode for this VideoChip. Defaults to `VideoChipMode.DoubleBuffer`.
 ---@field Width number Width in pixels of the rendering buffer. The area takes into account all the displays connected to this VideoChip. READ ONLY.
 ---@field Height number Height in pixels of the rendering buffer. The area takes into account all the displays connected to this VideoChip. READ ONLY.
+---@field RenderBuffers RenderBuffer[] List of RenderBuffers on which the VideoChip can render. READ ONLY.
+---@field TouchState boolean The pressed/released state of the screen touch interaction. READ ONLY.
+---@field TouchDown boolean A boolean flag that will only be set to true during the time tick in which the TouchState changes from released to pressed. READ ONLY.
+---@field TouchUp boolean A boolean flag that will only be set to true during the time tick in which the TouchState changes from pressed to released. READ ONLY.
+---@field TouchPosition vec2 The position of the touch interaction on the screen area. READ ONLY.
 ---@field Type "VideoChip"
+---@field RenderOnScreen fun(self:VideoChip) This method sets the VideoChip to use screens as render targets.
+---@field RenderOnBuffer fun(self:VideoChip, index:number) This method sets the VideoChip to use one of its RenderBuffers as a render target. The `index` parameter identifies the RenderBuffer to use.
+---@field SetRenderBufferSize fun(self:VideoChip, index:number, width:number, height:number) Resize one of the VideoChip's RenderBuffers.
 ---@field Clear fun(self:VideoChip, color:color) Clears all the render area with the specified `color`.
 ---@field SetPixel fun(self:VideoChip, position:vec2, color:color) Sets the pixel at the specified `position` to the specified `color`.
 ---@field DrawPointGrid fun(self:VideoChip, gridOffset:vec2, dotsDistance:number, color:color) Draws a dotted grid on the entire display area, with an offset. The `dotsDistance` parameter express the distance in pixels, on both axis, between dots.
@@ -33,3 +41,11 @@ VideoChipMode = {
     ---@type VideoChipMode
     DoubleBuffer = nil,
 }
+
+---Sent when the touch interaction is pressed or released.
+---@class VideoChipTouchEvent
+---@field TouchDown boolean A boolean flag that will only be set to true during the time tick in which the TouchState changes from released to pressed.
+---@field TouchUp boolean A boolean flag that will only be set to true during the time tick in which the TouchState changes from pressed to released.
+---@field Value vec2 The position of the touch interaction on the screen area.
+---@field Type "VideoChipTouchEvent" is "VideoChipTouchEvent"
+
